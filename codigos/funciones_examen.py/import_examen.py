@@ -8,6 +8,7 @@ while True:
     fun.calc_notas(notas)
     fun.nota_maxi_minim(notas)
     fun.mostrar_notas(notas)
+    #Llamando a las funciones
 
     break
 
