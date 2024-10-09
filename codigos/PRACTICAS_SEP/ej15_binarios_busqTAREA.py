@@ -1,5 +1,6 @@
 #como implementar la busqueda binaria(es un prototipo)
 import random
+import time
 lista= []
 def busqueda_binaria(lista,numero): #Prototipo que se nos dio
     izquierda,derecha = 0, len(lista) -1
@@ -24,3 +25,8 @@ if numero != -1:
     print(f"El número {numero} se encuentra en la posición {resultado}.") # se muestran los resultados
 else:
     print(f"El número {numero} no se encuentra en la lista")
+
+inicio= time.time()
+
+fin=time.time()
+print(f"Tiempor transcurrido de la generación de la lista \n {(fin-inicio)/1000} ms")
