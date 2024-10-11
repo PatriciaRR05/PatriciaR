@@ -24,3 +24,5 @@ def busqueda_binaria(lista,numero): #Prototipo que se nos dio
         else:
             derecha= medio -1
     return -1
+
+    
