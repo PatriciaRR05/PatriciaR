@@ -24,14 +24,22 @@ edadContacto.pack()
 #sirve para rellenar la entrada
 entradaNombre=tk.Entry(ventana)
 entradaNombre.pack()
+
 entradaTelefono=tk.Entry(ventana)
-entradaTelefono=tk.Entry(ventana)
+entradaTelefono.pack()
+
+entradaDireccion=tk.Entry(ventana)
+entradaDireccion.pack()
+
+entradaEdad=tk.Entry(ventana)
+entradaEdad.pack()
+
 
 def guardar():
     nombre = entradaNombre.get()
-    telefono= telefonoContacto.get()
-    direccion= direccionContacto.get()
-    edad = edadContacto.get()
+    telefono= entradaTelefono.get()
+    direccion= entradaDireccion.get()
+    edad = entradaEdad.get()
     with open("agenta.csv", "a", nweline="")as archivo:
         contacto=csv.writer(archivo)
         contacto.writerow([nombre, telefono, edad, direccion])
